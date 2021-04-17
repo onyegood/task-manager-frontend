@@ -1,0 +1,2 @@
+export const IS_LOADING_TRUE = "IS_LOADING_TRUE";
+export const IS_LOADING_FALSE = "IS_LOADING_FALSE";
