@@ -1,22 +1,15 @@
-
 import { call, put } from "redux-saga/effects";
 import {
-    fetchAllTaskSuccess,
-    fetchAllTaskFailed,
-    createNewTaskSuccess,
-    createNewTaskFailed,
-    updateTaskSuccess,
-    updateTaskFailed,
-    deleteTaskSuccess,
-    deleteTaskFailed
+  fetchAllTaskSuccess,
+  fetchAllTaskFailed,
+  createNewTaskSuccess,
+  createNewTaskFailed,
+  updateTaskSuccess,
+  updateTaskFailed,
+  deleteTaskSuccess,
+  deleteTaskFailed,
 } from "../actions";
-import { 
-  tasks, 
-  newTask, 
-  updateTask, 
-  deleteTask 
-} from '../../apis/taskApis';
-
+import { tasks, newTask, updateTask, deleteTask } from "../../apis/taskApis";
 
 export function* fetchAllTasksSaga(action: any) {
   try {

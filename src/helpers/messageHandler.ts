@@ -2,20 +2,20 @@ import { SUCCESS_MESSAGE } from "../redux/types";
 
 export const messageHandler = (response: any) => async (dispatch: any) => {
   if (response.data !== undefined) {
-    dispatch({ 
-      type: SUCCESS_MESSAGE, 
+    dispatch({
+      type: SUCCESS_MESSAGE,
       payload: {
         success: true,
-        message: response.data.message
-      } 
+        message: response.data.message,
+      },
     });
-  }else{
-    dispatch({ 
-      type: SUCCESS_MESSAGE, 
+  } else {
+    dispatch({
+      type: SUCCESS_MESSAGE,
       payload: {
         success: true,
-        message: response
-      } 
+        message: response,
+      },
     });
   }
 };

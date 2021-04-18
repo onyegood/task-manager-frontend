@@ -3,13 +3,13 @@ import {
   CREATE_NEW_TASK_REQUEST,
   UPDATE_TASK_REQUEST,
   DELETE_TASK_REQUEST,
-  FETCH_ALL_TASKS_REQUEST
+  FETCH_ALL_TASKS_REQUEST,
 } from "../types";
-import { 
-  fetchAllTasksSaga, 
-  createNewTaskSage, 
-  updateTaskSaga, 
-  deleteTaskSaga 
+import {
+  fetchAllTasksSaga,
+  createNewTaskSage,
+  updateTaskSaga,
+  deleteTaskSaga,
 } from "./taskSaga";
 
 export default function* rootSaga() {

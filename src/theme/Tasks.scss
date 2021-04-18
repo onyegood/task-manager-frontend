@@ -93,6 +93,17 @@
 .mobile-view{
     display: flex;
 }
+.cursor-pointer{
+    cursor: pointer;
+    color: #999;
+    &:hover{
+        color: #dc3545
+    }
+}
+.title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 @media screen and (min-width: 50px) and (max-width: 599px) {
     .mobile-view{

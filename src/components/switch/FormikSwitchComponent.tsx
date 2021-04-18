@@ -8,24 +8,21 @@ interface Props {
   publish: boolean;
 }
 
-const FormikSwitchComponent = (props: Props) => {
-  const {title, handleChange, handleBlur, name, publish} = props;
+const FormikSwitchComponent = ({ title, handleChange, handleBlur, name, publish }: Props) => {
   return (
     <div className="">
-    <div>
-    {title && <label className="switch_title">{title}</label>}
-    </div>
-    <label className="switch">
-      <input
-        id={name}
-        name={name}
-        type="checkbox"
-        onChange={handleChange}
-        onBlur={handleBlur}
-        defaultChecked={publish}
-      />
-      <span className="slider round" title={title} />
-    </label>
+      <div>{title && <label className="switch_title">{title}</label>}</div>
+      <label className="switch">
+        <input
+          id={name}
+          name={name}
+          type="checkbox"
+          onChange={handleChange}
+          onBlur={handleBlur}
+          defaultChecked={publish}
+        />
+        <span className="slider round" title={title} />
+      </label>
     </div>
   );
 };
