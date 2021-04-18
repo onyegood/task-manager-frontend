@@ -53,7 +53,7 @@ const TaskCard = ({
                         {task.status ? "Completed" : "Incomplete"}
                       </span>
                       <p className="mb-1"> {task.name} </p>
-                      <p className="mb-0 small">{task.date}</p>
+                      <p className="mb-0 small"><i className="ion-md-alarm" /> {task.date}</p>
                     </div>
                     {!task.status ? (
                       <div>
