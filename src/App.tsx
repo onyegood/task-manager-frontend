@@ -6,6 +6,7 @@ import ContentSection from "./layout/ContentSection";
 import CountsSection from "./layout/CountsSection";
 import WelcomeSection from "./layout/WelcomeSection";
 import { Task } from "./model/Task";
+
 import {
   deleteTaskRequest,
   fetchAllTaskRequest,
@@ -66,6 +67,7 @@ const App = () => {
   };
 
   useEffect(() => {
+
     handleFetchDataFromServer();
     // eslint-disable-next-line
   }, []);

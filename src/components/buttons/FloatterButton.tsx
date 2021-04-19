@@ -6,6 +6,7 @@ interface Props {
 const FloatterButton = ({ formMode, setFormMode, setTask }: Props) => {
   return (
     <div
+      
       className={`floater-button ${
         !formMode ? "faa-bounce animated bg-success" : "bg-danger"
       }`}
