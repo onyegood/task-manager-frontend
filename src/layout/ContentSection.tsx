@@ -53,10 +53,10 @@ const ContentSection = ({
               handleUpdateDataFromServer={handleUpdateDataFromServer}
             />
           ) : (
-            <div className="empty-list d-flx al-c jc-c mt-4">
+            <div className="col-sm-6 text-center mx-auto empty-list mt-4 ">
+              <i className="ion-md-happy text-success" />
               <p>
-                You have not add your todo list{" "}
-                <i className="ion-md-happy text-danger" />{" "}
+                You have not add your todo list, please use the button at the bottom right conner to add new tasks.
               </p>
             </div>
           )}

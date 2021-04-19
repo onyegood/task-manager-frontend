@@ -49,7 +49,7 @@ const App = () => {
   const triggerDailogBox = (id: string) => {
     setTaskId(id);
     setOpen(!open);
-  }
+  };
 
   const handleUpdateDataFromServer = async (payload: Task, action: string) => {
     if (action === "done") {
@@ -67,7 +67,6 @@ const App = () => {
   };
 
   useEffect(() => {
-
     handleFetchDataFromServer();
     // eslint-disable-next-line
   }, []);
@@ -89,11 +88,13 @@ const App = () => {
           handleUpdateDataFromServer={handleUpdateDataFromServer}
         />
 
-        <FloatterButton
-          formMode={formMode}
-          setFormMode={setFormMode}
-          setTask={setTask}
-        />
+        {!loader && (
+          <FloatterButton
+            formMode={formMode}
+            setFormMode={setFormMode}
+            setTask={setTask}
+          />
+        )}
       </div>
       <DialogBox
         open={open}
